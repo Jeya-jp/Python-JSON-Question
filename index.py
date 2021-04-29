@@ -3,7 +3,7 @@ def insertContent():
 
         print("Enter the id: ")
         id = input()
-        f.write("[{\n")
+        f.write("{\n")
         f.write(R'"id": "' + id + R'",')
 
         print("Enter the question: ")
@@ -40,7 +40,7 @@ def insertContent():
         print("Enter the explanation: ")
         explain = input()
         f.write("\n")
-        f.write(R'"explanation": "' + explain + R'"' + "\n},\n]")
+        f.write(R'"explanation": "' + explain + R'"' + "\n},\n")
 
         f.close()
 print("Enter how many questions: ")
